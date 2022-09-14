@@ -1,1 +1,3 @@
-# Connections-Lab-Week-1
+# Connections Lab Week 1
+
+Hi Everyone 😊
