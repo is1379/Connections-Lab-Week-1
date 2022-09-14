@@ -13,11 +13,12 @@ body {
   .container {
     margin-left: 18.5vw;
     margin-right: 18.5vw;
-    margin-top: 10%;
+    margin-top: 5%;
     position: fixed;
   }
   
   .header1 {
+    position: fixed;
     font-family: 'Roboto Slab', arial, serif;
     font-weight: 400;
     font-size: max(2vw, 15px);
