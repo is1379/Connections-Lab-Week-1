@@ -106,25 +106,12 @@ let billionaires = [{
   }
 ]
 
-$(".container").append("<img id='elon' class = 'i1' src= 'https://static.wixstatic.com/media/8b565e_631750d9e2c24ea4989ed903529892b3~mv2.jpg'/>");
-
-$(".container").append("<img id='bernard' class = 'i2' src= 'https://static.wixstatic.com/media/8b565e_cd0f9d433f504be08c6312fbcd1d08be~mv2.jpg'/>");
-
-$(".container").append("<img id='jeff' class = 'i3' src= 'https://static.wixstatic.com/media/8b565e_53edfd268b8941b3a1e6d4f5f07d2308~mv2.jpg'/>");
-
-$(".container").append("<img id='gautam' class = 'i4' src= 'https://static.wixstatic.com/media/8b565e_a94a2444266e46079522b0ade06cbc03~mv2.jpg'/>");
-
-$(".container").append("<img id='bill' class = 'i5' src= 'https://static.wixstatic.com/media/8b565e_d00c99e8dc2c40fe8b537c94572da715~mv2.jpg'/>");
-
-$(".container").append("<img id='larry' class = 'i6' src= 'https://static.wixstatic.com/media/8b565e_bd329d2acd914ddba995e72dc7958019~mv2.jpg'/>");
-
-$(".container").append("<img id='warren' class = 'i7' src= 'https://static.wixstatic.com/media/8b565e_8977d5db59124314a5eb0da954fb4b55~mv2.jpg'/>");
-
-$(".container").append("<img id='mukesh' class = 'i8' src= 'https://static.wixstatic.com/media/8b565e_f97562cd31e547538e7c0340e046f9f6~mv2.jpg'/>");
-
-$(".container").append("<img id='page' class = 'i9' src= 'https://static.wixstatic.com/media/8b565e_11efba28b5d442fa803685215e217cf6~mv2.jpg'/>");
-
-$(".container").append("<img id='sergey' class = 'i10' src= 'https://static.wixstatic.com/media/8b565e_701420195b3d474291444ce9ecb99c2e~mv2.jpg'/>");
+for (var i = 0; i < billionaires.length; i++) {
+    let index = i + 1
+    let current = billionaires[i]
+    let imgString = "<img id='" + current.rank + "' class = 'i" + index.toString() + "' src='" + current.image + "'/>"
+    $(".container").append(imgString)
+}
 
 $(".title").append("<h1 id='title' class = 'header1'>The Billionaire Loader</h1>");
 
